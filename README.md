@@ -11,15 +11,23 @@
 
 |  | # | Disciplina | Professor(a) | Média |
 |:---:|:---:|:---|:---|:---:|
-|  | 0 |  |  |  |
+| &check; | 0 | Portal da Robótica: Ambientação e Integração | - |  |
+|  | 1 | Prototipagem Eletromecânica | <ul><li>Celso Oliveira Barcelos</li><li>Geice Paula Villibor</li><li>Tutor: Lucas Tavares Machado</li></ul> |  |
 
 ---
 
 ## Cronograma
 ### ```2025```
+
 |  | # | Data | Disciplina |
-|:---:|:---:|:---:|:---|
-|  | 01 | 15/09/2025 |  |
+|:---:|:---:|:---:|:---:|
+|  | 00 | 15/09/2025 | Portal da Robótica: Ambientação e Integração |
+|  | 01 | 22/09/2025 | Prototipagem Eletromecânica |
+|  | 02 | 01/10/2025 | Prototipagem Eletromecânica |
+|  | 03 | 06/10/2025 | Prototipagem Eletromecânica |
+|  | 04 | 13/10/2025 | Prototipagem Eletromecânica |
+|  | 05 | 20/10/2025 | Prototipagem Eletromecânica |
+|  | 06 | 27/10/2025 | Prototipagem Eletromecânica |
 
 ---
 

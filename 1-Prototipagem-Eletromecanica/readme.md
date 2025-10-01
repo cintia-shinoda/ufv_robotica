@@ -28,7 +28,8 @@
 
 |  | # | Vencimento |  | Nota |
 |:---:|:---:|:---:|:---:|:---:|
-|  | 1 | 02/10/2025 | Questionário - Semana 1 |  / 20 |
+| &check; | 1 | 02/10/2025 | Questionário - Semana 1 |  |
+
 
 ---
 

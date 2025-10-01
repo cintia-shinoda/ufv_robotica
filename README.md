@@ -11,8 +11,8 @@
 
 |  | # | Disciplina | Professor(a) | Data | Média |
 |:---:|:---:|:---|:---|:---:|:---:|
-| &check; | 0 | [Portal da Robótica: Ambientação e Integração](https://github.com/cintia-shinoda/ufv_robotica/tree/main/0-Ambientacao-e-Integracao) |  | 15/09/2025 a 21/09/2025 | - |
-|  | 1 | [Prototipagem Eletromecânica](https://github.com/cintia-shinoda/ufv_robotica/tree/main/1-Prototipagem-Eletromecanica) | <ul><li>Celso Oliveira Barcelos</li><li>Geice Paula Villibor</li><li>Tutor: Lucas Tavares Machado</li></ul> | 22/09/2025 a 02/11/2025 |  |
+| &check; | 0 | [Portal da Robótica: Ambientação e Integração](https://github.com/cintia-shinoda/ufv_robotica/tree/main/0-Ambientacao-e-Integracao) |  | 15/09/2025 a 21/09/2025 | 100/100 |
+|  | 1 | [Prototipagem Eletromecânica](https://github.com/cintia-shinoda/ufv_robotica/tree/main/1-Prototipagem-Eletromecanica) | <ul><li>Celso Oliveira Barcelos</li><li>Geice Paula Villibor</li><li>Tutor: Lucas Tavares Machado</li></ul> | 22/09/2025 a 02/11/2025 | / 100 |
 
 ---
 

@@ -1,38 +1,5 @@
 # ELT 532 - Prototipagem Eletromecânica
 
-## Encontros Síncronos
-|  | # | Data |  |
-|:---:|:---:|:---:|:---:|
-|  | 1 | 22/09/2025 |  |
-|  | 2 | 01/10/2025 |  |
-|  | 3 | 06/10/2025 |  |
-|  | 4 | 13/10/2025 |  |
-|  | 5 | 20/10/2025 |  |
-|  | 6 | 27/10/2025 |  |
-
-### Monitorias:
-|  | # | Data |  |
-|:---:|:---:|:---:|:---:|
-|  | 1 | 25/09/2025 |  |
-|  | 2 | 02/10/2025 |  |
-|  | 3 | 09/10/2025 |  |
-|  | 4 | 16/10/2025 |  |
-|  | 5 | 23/10/2025 |  |
-|  | 6 | 30/10/2025 |  |
-
----
-
-## Avaliações:
-- Atividades Avaliativas (80%) : semanalmente
-- Trabalho Final (20%): última semana
-
-|  | # | Vencimento |  | Nota |
-|:---:|:---:|:---:|:---:|:---:|
-| &check; | 1 | 02/10/2025 | Questionário - Semana 1 |  |
-
-
----
-
 ## Professores
 - Geice Paula Villibor
 - Celso Oliveira Barcelos
@@ -47,6 +14,34 @@
 ## Objetivos: 
 Apresentar os conceitos fundamentais sobre prototipagem eletromecânica como ferramenta para o projeto de robôs e sistemas robóticos.
 
+## Encontros Síncronos
+|  | # | Data |  |
+|:---:|:---:|:---:|:---:|
+|  | Teórica 1 | 22/09/2025 |  |
+|  | Monitoria 1 | 25/09/2025 |  |
+|  | Teórica 2 | 01/10/2025 |  |
+|  | Monitoria 2 | 02/10/2025 |  |
+|  | Teórica 3 | 06/10/2025 |  |
+|  | Monitoria 3 | 09/10/2025 |  |
+|  | Teórica 4 | 13/10/2025 |  |
+|  | Monitoria 4 | 16/10/2025 |  |
+|  | Teórica 5 | 20/10/2025 |  |
+|  | Monitoria 5 | 23/10/2025 |  |
+|  | Teórica 6 | 27/10/2025 |  |
+|  | Monitoria 6 | 30/10/2025 |  |
+
+
+## Avaliações:
+- Atividades Avaliativas (80%) : semanalmente
+- Trabalho Final (20%): última semana
+
+|  | # | Vencimento |  | Nota |
+|:---:|:---:|:---:|:---:|:---:|
+| &check; | 1 | 02/10/2025 | Questionário - Semana 1 |  |
+
+<br>
+
+-----
 
 ## Bibliografias básicas:
 - Volpato, N. Prototipagem Rápida: tecnologias e aplicações. a Edição. Blücher. 2007.

@@ -1,6 +1,7 @@
 # Semana 1
 
-## Guia de Estudo
+## Guia de Estudos
+
 - [ ] Vídeo-Aula 0 - Boas vindas e apresentação dos professores
 - [ ] Leitura: Introdução à Prototipagem Eletromecânica
 - [ ] Vídeo-Aula 1 - Visão Geral sobre Prototipagem Eletromecânica

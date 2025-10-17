@@ -8,4 +8,4 @@
 - [ ] Vídeo-aula 2: Princípios de Projeto para a Prototipagem
 - [ ] Leitura: Seção 3.3: Impressão 3D - Princípios e Aplicações
 - [ ] Vídeo-aula 3: Impressão 3D - Princípios e Aplicações
-- [ ] Questionário - Semana 3
+- [x] Questionário - Semana 3

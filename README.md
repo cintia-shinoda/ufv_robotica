@@ -9,27 +9,16 @@
 
 ## Disciplinas
 
-|  | # | Disciplina | Professor(a) | Data | Média |
-|:---:|:---:|:---|:---|:---:|:---:|
-| &check; | 0 | [Portal da Robótica: Ambientação e Integração](https://github.com/cintia-shinoda/ufv_robotica/tree/main/0-Ambientacao-e-Integracao) |  | 15/09/2025 a 21/09/2025 | 100/100 |
-|  | 1 | [Prototipagem Eletromecânica](https://github.com/cintia-shinoda/ufv_robotica/tree/main/1-Prototipagem-Eletromecanica) | <ul><li>Celso Oliveira Barcelos</li><li>Geice Paula Villibor</li><li>Tutor: Lucas Tavares Machado</li></ul> | 22/09/2025 a 02/11/2025 | / 100 |
+|  | # | Data | Disciplina | Professor(es)| Média |
+|:---:|:---:|:---:|:---|:---|:---:|
+| &check; | 0 | 15/09/2025 a 21/09/2025 |[Portal da Robótica: Ambientação e Integração](https://github.com/cintia-shinoda/ufv_robotica/tree/main/0-Ambientacao-e-Integracao) |  | 100/100 |
+|  | 1 | 22/09/2025 a 02/11/2025 | [Prototipagem Eletromecânica](https://github.com/cintia-shinoda/ufv_robotica/tree/main/1-Prototipagem-Eletromecanica) | <ul><li>Celso Oliveira Barcelos</li><li>Geice Paula Villibor</li><li>Tutor: Lucas Tavares Machado</li></ul> | / 100 |
 
 ---
 
-## Cronograma
-### ```2025```
 
-|  | # | Data | Disciplina |
-|:---:|:---:|:---:|:---:|
-|  | 00 | 15/09/2025 | Portal da Robótica: Ambientação e Integração |
-|  | 01 | 22/09/2025 | Prototipagem Eletromecânica |
-|  | 02 | 01/10/2025 | Prototipagem Eletromecânica |
-|  | 03 | 06/10/2025 | Prototipagem Eletromecânica |
-|  | 04 | 13/10/2025 | Prototipagem Eletromecânica |
-|  | 05 | 20/10/2025 | Prototipagem Eletromecânica |
-|  | 06 | 27/10/2025 | Prototipagem Eletromecânica |
 
----
+## Licença
 
 Copyright 2025 Cintia I. Shinoda
 

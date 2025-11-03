@@ -7,7 +7,7 @@
 | &check; | 1 | 02/10/2025 | Questionário - Semana 1 | 20 / 20 |
 | &check; | 2 | 13/10/2025 | Questionário - Semana 2 | 20 / 20 |
 | &check; | 3 | 19/10/2025 | Questionário - Semana 3 | 20 / 20 |
-|  | 4 | 23/10/2025 | Questionário - Semana 4 | 20 / 20 |
+| &check; | 4 | 23/10/2025 | Questionário - Semana 4 | 20 / 20 |
 |  |  | 30/10/2025 | Projeto Final |  / 20 |
 
 <br>

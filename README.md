@@ -12,7 +12,8 @@
 |  | # | Data | Disciplina | Professor(es)| Média |
 |:---:|:---:|:---:|:---|:---|:---:|
 | &check; | 0 | 15/09/2025 a 21/09/2025 |[Portal da Robótica: Ambientação e Integração](https://github.com/cintia-shinoda/ufv_robotica/tree/main/0-Ambientacao-e-Integracao) |  | 100/100 |
-|  | 1 | 22/09/2025 a 02/11/2025 | [Prototipagem Eletromecânica](https://github.com/cintia-shinoda/ufv_robotica/tree/main/1-Prototipagem-Eletromecanica) | <ul><li>Celso Oliveira Barcelos</li><li>Geice Paula Villibor</li><li>Tutor: Lucas Tavares Machado</li></ul> | / 100 |
+|  | 1 | 22/09/2025 a 02/11/2025 | [Prototipagem Eletromecânica](https://github.com/cintia-shinoda/ufv_robotica/tree/main/1-Prototipagem-Eletromecanica) | <ul><li>Celso Oliveira Barcelos</li><li>Geice Paula Villibor</li><li>Monitoria: Lucas Tavares Machado</li></ul> | / 100 |
+|  | 2 | 03/11/2025 | [Sensores e Aplicações](https://github.com/cintia-shinoda/ufv_robotica/tree/main/2-Sensores-e-Aplicacoes) | <ul><li>Gustavo Veríssimo</li><li>André Mendes</li><li>Monitorias: Lucas Tavares</li></ul> |  |
 
 ---
 

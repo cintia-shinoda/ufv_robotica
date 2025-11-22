@@ -1,13 +1,24 @@
 # ```ELT 533 - Sensores e Aplicações```
 
-|  |  |  |
+### Conteúdo
+|  | # | Conteúdo |
 |:---:|:---:|:---|
-|  | Semana 1 | Aspectos Gerais da Instrumentação |
-|  | Semana 2 | Transdutores Baseados em Sistemas Elétricos |
-|  | Semana 3 | Sensores de Distância e Velocidade |
-|  | Semana 4 | Medições Inerciais |
-|  | Semana 5 | Informação Visual |
-|  | Semana 6 | Sistemas de Localização Global |
+|  | 1 | Aspectos Gerais da Instrumentação |
+|  | 2 | Transdutores Baseados em Sistemas Elétricos |
+|  | 3 | Sensores de Distância e Velocidade |
+|  | 4 | Medições Inerciais |
+|  | 5 | Informação Visual |
+|  | 6 | Sistemas de Localização Global |
+
+---
+
+### Avaliações
+|  | Avaliação | Nota |
+|:---:|:---|:---:|
+|  | Questionário S1 e S2 |  |
+|  | Questionário S3 |  |
+|  | Questionário S4 |  |
+|  | Questionário S5 e S6 |  |
 
 ---
 

@@ -1,11 +1,11 @@
 # Semana 5: Informação Visual
 
-## Câmera RGB
+## 1. Câmera RGB
 
-## Câmera Estéreo
+## 2. Câmera Estéreo
 
-## Câmera Multiespectral
+## 3. Câmera Multiespectral
 
-## Câmera RGB-D
+## 4. Câmera RGB-D
 
-## Câmera Térmica
+## 5. Câmera Térmica

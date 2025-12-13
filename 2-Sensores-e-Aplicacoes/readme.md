@@ -18,7 +18,8 @@
 | &check; | Questionário S1 e S2 | 20 / 20 |
 | &check; | Questionário S3 | 20/ 20 |
 | &check; | Questionário S4 | 20 / 20 |
-|  | Questionário S5 e S6 |  |
+| &check; | Questionário S5 e S6 | 20 / 20 |
+| &check; | Projeto Final |  |
 
 ---
 

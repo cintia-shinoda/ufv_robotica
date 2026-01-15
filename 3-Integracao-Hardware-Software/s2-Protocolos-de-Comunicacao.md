@@ -15,3 +15,15 @@
 ### 2.1.9 Redes Mesh
 
 ## 2.2 Aplicações
+### 2.2.1 Introdução com I2C aos exemplos de Protocolos Seriais
+#### 2.2.1a Detalhes Internos das Bibliotecas I2C
+### 2.2.2 Exemplo SPI
+### 2.2.3 Exemplo CAN
+#### 2.2.3.a Rádios sem Fio
+#### 2.2.3b WiFi Cliente-Servidor em Rede Local
+#### 2.2.3c WiFi como Ponto de Acesso
+#### 2.2.3d WiFi e MQTT
+#### 2.2.3e Bluetooth
+#### 2.2.3f Rede Mesh
+### 2.2.4 Protocolo 1-Wire
+### 2.2.5 Exemplos de Sensores com Interface I2C e SPI

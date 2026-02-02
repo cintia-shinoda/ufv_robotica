@@ -19,7 +19,7 @@
 | &check; | Questionário S3 | 20 / 20 |
 | &check; | Questionário S4 | 20 / 20 |
 | &check; | Questionário S5 e S6 | 20 / 20 |
-| &check; | Projeto Final |  |
+| &check; | Projeto Final | 19 / 20 |
 
 ---
 

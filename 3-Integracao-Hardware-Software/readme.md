@@ -8,9 +8,11 @@
 |  | 3 | Interface de Comunicação |
 |  | 4 | Atuadores Hidráulicos e Pneumáticos |
 |  | 5 | Atuadores Elétricos |
-|  | 6 |  |
+
+<br>
 
 ---
+
 
 ### Avaliações
 |  | Avaliação | Nota |
@@ -20,6 +22,8 @@
 |  | AV3 - Analógico e Digital |  |
 | &check; | AV4 - Atuadores Elétricos, Hidráulicos e Pneumáticos | 10 / 10 |
 |  | Projeto Final |  |
+
+<br>
 
 ---
 

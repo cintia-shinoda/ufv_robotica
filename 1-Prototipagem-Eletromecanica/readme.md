@@ -1,5 +1,20 @@
 # ```ELT 532 - Prototipagem Eletromecânica```
 
+
+### Conteúdo
+|  | # | Conteúdo |
+|:---:|:---:|:---|
+|  | 1 | Sistemas Eletromecânicos |
+|  | 2 | Fundamentos da Prototipagem Mecânica |
+|  | 3 | Ferramentas e Modelagem Mecânica |
+|  | 4 | Fundamentos da Prototipagem Eletrônica |
+|  | 5 | Ferramentas de Modelagem Eletrônica |
+
+<br>
+
+---
+
+
 ### Avaliações
 
 |  | # | Vencimento | Avaliação | Nota |
@@ -7,9 +22,9 @@
 | &check; | 1 | 02/10/2025 | [Questionário - Semana 1](https://github.com/cintia-shinoda/ufv_robotica/blob/main/1-Prototipagem-Eletromecanica/avaliacoes/questionario-1.md) | 20 / 20 |
 | &check; | 2 | 13/10/2025 | [Questionário - Semana 2](https://github.com/cintia-shinoda/ufv_robotica/blob/main/1-Prototipagem-Eletromecanica/avaliacoes/questionario-2.md) | 20 / 20 |
 | &check; | 3 | 19/10/2025 | [Questionário - Semana 3](https://github.com/cintia-shinoda/ufv_robotica/blob/main/1-Prototipagem-Eletromecanica/avaliacoes/questionario-3.md) | 20 / 20 |
-| &check; | 4 | 23/10/2025 | Questionário - Semana 4 | 20 / 20 |
-| &check; |  | 30/10/2025 | Projeto Final | 18.1 / 20 |
-| Média Final |  |  |  | 98 / 100 |
+| &check; | 4 | 23/10/2025 | [Questionário - Semana 4](https://github.com/cintia-shinoda/ufv_robotica/blob/main/1-Prototipagem-Eletromecanica/avaliacoes/questionario-4.md) | 20 / 20 |
+| &check; |  | 30/10/2025 | [Projeto Final](https://github.com/cintia-shinoda/ufv_robotica/blob/main/1-Prototipagem-Eletromecanica/Projeto-Final/Projeto-Final-ELT532.pdf) | 18.1 / 20 |
+| **Média Final** |  |  |  | **98 / 100** |
 
 <br>
 

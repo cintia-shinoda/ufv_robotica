@@ -17,10 +17,10 @@
 ### Avaliações
 |  | Avaliação | Nota |
 |:---:|:---|:---:|
-| &check; | AV1 - Introdução a Microprocessadores e Microcontroladores | 10 / 10 |
-|  | AV2 - Protocolos de Comunicação |  |
-|  | AV3 - Analógico e Digital |  |
-| &check; | AV4 - Atuadores Elétricos, Hidráulicos e Pneumáticos | 10 / 10 |
+| &check; | AV1 - Introdução a Microprocessadores e Microcontroladores | 20 / 20 |
+| &check; | AV2 - Protocolos de Comunicação | 19,17 / 20 |
+| &check; | AV3 - Analógico e Digital | 19,05 / 20 |
+| &check; | AV4 - Atuadores Elétricos, Hidráulicos e Pneumáticos | 20 / 20 |
 |  | Projeto Final |  |
 
 <br>

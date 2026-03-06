@@ -21,7 +21,8 @@
 | &check; | AV2 - Protocolos de Comunicação | 19,17 / 20 |
 | &check; | AV3 - Analógico e Digital | 19,05 / 20 |
 | &check; | AV4 - Atuadores Elétricos, Hidráulicos e Pneumáticos | 20 / 20 |
-|  | Projeto Final |  |
+| &check; | Projeto Final |  |
+| **Média Final** |  | ** / 100** |
 
 <br>
 

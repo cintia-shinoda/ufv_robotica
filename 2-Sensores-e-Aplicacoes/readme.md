@@ -20,6 +20,7 @@
 | &check; | [Questionário S4](https://github.com/cintia-shinoda/ufv_robotica/blob/main/2-Sensores-e-Aplicacoes/avaliacoes/questionario-4.md) | 20 / 20 |
 | &check; | [Questionário S5 e S6](https://github.com/cintia-shinoda/ufv_robotica/blob/main/2-Sensores-e-Aplicacoes/avaliacoes/questionario-5-6.md) | 20 / 20 |
 | &check; | [Projeto Final](https://github.com/cintia-shinoda/ufv_robotica/blob/main/2-Sensores-e-Aplicacoes/Projeto-Final.md) | 19 / 20 |
+| **Média Final** |  | **99 / 100** |
 
 ---
 

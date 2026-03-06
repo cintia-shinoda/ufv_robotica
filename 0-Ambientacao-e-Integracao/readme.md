@@ -13,4 +13,4 @@
 | &check; | 3 | 12/10/2025 | Questionário: Esta é minha área | 20 / 20 |
 | &check; | 4 | 19/10/2025 | Questionário: De onde vim e pra onde vou | 20 / 20 |
 | &check; | 5 | 26/10/2025 | Tarefa: Gostei desta disciplina | 20 / 20 |
-| **Nota Final** |  |  |  | **100 / 100** |
+| **Média Final** |  |  |  | **100 / 100** |

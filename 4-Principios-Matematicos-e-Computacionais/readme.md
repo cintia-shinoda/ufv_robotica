@@ -31,3 +31,5 @@
 |:---:|:---|:---:|:---|
 |  | Teórica 1 |  02/03/2026 | Visão Geral de Princípios Matemáticos |
 |  | Teórica 2 | 05/03/2026 | Fundamentos de Matemática |
+
+

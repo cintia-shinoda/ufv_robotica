@@ -18,7 +18,7 @@
 ### Avaliações
 |  | Avaliação | Nota |
 |:---:|:---|:---:|
-|  |  |  |
+|  | [Trabalho Final](https://github.com/cintia-shinoda/ufv_robotica/blob/main/4-Principios-Matematicos-e-Computacionais/Projeto-Final/projeto-final.ipynb) |  |
 | **Média Final** |  | ** / 100** |
 
 <br>

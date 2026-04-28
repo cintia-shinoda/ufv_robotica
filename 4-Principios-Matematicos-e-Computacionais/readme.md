@@ -18,8 +18,12 @@
 ### Avaliações
 |  | Avaliação | Nota |
 |:---:|:---|:---:|
-|  | [Trabalho Final](https://github.com/cintia-shinoda/ufv_robotica/blob/main/4-Principios-Matematicos-e-Computacionais/Projeto-Final/projeto-final.ipynb) |  |
-| **Média Final** |  | ** / 100** |
+|  | Avaliação 1 |  |
+|  | Avaliação 2 |  |
+|  | Avaliação 3 |  |
+|  | Avaliação 4 |  |
+|  | [Trabalho Final](https://github.com/cintia-shinoda/ufv_robotica/blob/main/4-Principios-Matematicos-e-Computacionais/Projeto-Final/Projeto-Final.pdf) |  |
+| **Média Final** |  | **** |
 
 <br>
 
@@ -31,5 +35,14 @@
 |:---:|:---|:---:|:---|
 |  | Teórica 1 |  02/03/2026 | Visão Geral de Princípios Matemáticos |
 |  | Teórica 2 | 05/03/2026 | Fundamentos de Matemática |
-
+|  |  | 10/03/2026 |  |
+|  |  | 12/03/2026 |  |
+|  |  | 16/03/2026 |  |
+|  |  | 19/03/2026 |  |
+|  |  | 24/03/2026 |  |
+|  |  | 26/03/2026 |  |
+|  |  | 30/03/2026 |  |
+|  |  | 02/04/2026 |  |
+|  |  | 06/04/2026 |  |
+|  |  | 09/04/2026 |  |
 

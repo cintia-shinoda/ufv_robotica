@@ -1,4 +1,4 @@
-# UFV - Especialização em Robótica
+# `UFV - Especialização em Robótica`
 
 <p align="center">
   <img src="https://img.shields.io/github/last-commit/cintia-shinoda/ufv_robotica" alt="GitHub Last Commit" />
@@ -15,6 +15,8 @@
 | &check; | 1 | 22/09/2025 a 02/11/2025 | [Prototipagem Eletromecânica](https://github.com/cintia-shinoda/ufv_robotica/tree/main/1-Prototipagem-Eletromecanica) | <ul><li>Celso Oliveira Barcelos</li><li>Geice Paula Villibor</li><li>Monitoria: Lucas Tavares Machado</li></ul> | 98 / 100 |
 | &check; | 2 | 03/11/2025 | [Sensores e Aplicações](https://github.com/cintia-shinoda/ufv_robotica/tree/main/2-Sensores-e-Aplicacoes) | <ul><li>Gustavo Veríssimo</li><li>André Mendes</li><li>Monitorias: Lucas Tavares</li></ul> | 99 / 100 |
 |  | 3 | 06/01/2026 a 10/02/2026 | Integração Hardware-Software | <ul><li>Ricardo dos Santos Ferreira</li><li>André Luís Carvalho Mendes</li></ul> |  |
+|  | 4 |  | Princípios Matemáticos e Computacionais |  |  |
+|  | 5 |  | Robótica Educacional |  |  |
 
 ---
 

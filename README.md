@@ -17,6 +17,7 @@
 |  | 3 | 06/01/2026 a 10/02/2026 | Integração Hardware-Software | <ul><li>Ricardo dos Santos Ferreira</li><li>André Luís Carvalho Mendes</li></ul> |  |
 |  | 4 |  | Princípios Matemáticos e Computacionais |  |  |
 |  | 5 |  | Tópicos Especiais em Robótica |  |  |
+|  | 6 |  | Fundamentos de Robótica Terrestre |  |  |
 
 ---
 

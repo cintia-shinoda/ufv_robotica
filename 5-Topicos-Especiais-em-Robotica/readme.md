@@ -22,8 +22,9 @@
 
 
 ### Encontros Síncronos
-|  |  | Data |  |
-|:---:|:---|:---:|:---|
-|  |  | 16/04/2026 | AuRoRA |
-|  |  | 23/04/2026 | CoppeliaSim |
-|  |  | 30/04/2026 | Scratch |
+|  |  | Data |  |  |
+|:---:|:---|:---:|:---|:---|
+|  |  | 16/04/2026 | AuRoRA | <ul><li>Pioneer</li><li>Bebop</li><li>Extra: Controle dos Robôs via Teclado</li></ul> |
+|  |  | 23/04/2026 | CoppeliaSim | <ul><li>Introdução ao Software</li><li>Pioneer e Scara</li><li>Extra: Controle via Python</li></ul> |
+|  |  | 30/04/2026 | Scratch | <ul><li>Introdução</li><li>Blocky + Coppelia via Python</li></ul> |
+|  |  | 07/05/2026 | Outros Softwares de Simulação | <ul><li>Gazebo</li><li>Webots</li></ul>

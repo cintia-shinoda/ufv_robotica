@@ -13,7 +13,7 @@
 ### Avaliações
 |  | Avaliação | Nota |
 |:---:|:---|:---:|
-|  | AuroRA |  |
+| &check; | [AuroRA](https://github.com/cintia-shinoda/ufv_robotica/tree/main/5-Topicos-Especiais-em-Robotica/Atividades-Avaliativas/AuRoRA/Atividade-AuRoRA.pdf) |  |
 |  | CoppeliaSim |  |
 |  | Scratch |  |
 

@@ -22,7 +22,7 @@
 |  | Avaliação 2 |  |
 |  | Avaliação 3 |  |
 |  | Avaliação 4 |  |
-|  | [Trabalho Final](https://github.com/cintia-shinoda/ufv_robotica/blob/main/4-Principios-Matematicos-e-Computacionais/Projeto-Final/Projeto-Final.pdf) |  |
+| &check; | [Trabalho Final](https://github.com/cintia-shinoda/ufv_robotica/blob/main/4-Principios-Matematicos-e-Computacionais/Projeto-Final/Projeto-Final.pdf) | 20 / 20 |
 | **Média Final** |  | **** |
 
 <br>

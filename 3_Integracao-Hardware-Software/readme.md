@@ -17,10 +17,10 @@
 ### Avaliações
 |  | Avaliação | Nota |
 |:---:|:---|:---:|
-| &check; | AV1 - Introdução a Microprocessadores e Microcontroladores | 20 / 20 |
-| &check; | AV2 - Protocolos de Comunicação | 19,17 / 20 |
-| &check; | AV3 - Analógico e Digital | 19,05 / 20 |
-| &check; | AV4 - Atuadores Elétricos, Hidráulicos e Pneumáticos | 20 / 20 |
+| &check; | [AV1 - Introdução a Microprocessadores e Microcontroladores](https://github.com/cintia-shinoda/ufv_robotica/blob/main/3_Integracao-Hardware-Software/Avaliacoes/AV1-Intro-Microprocessadores-e-Microcontroladores.md) | 20 / 20 |
+| &check; | [AV2 - Protocolos de Comunicação](https://github.com/cintia-shinoda/ufv_robotica/blob/main/3_Integracao-Hardware-Software/Avaliacoes/AV2-Protocolos-de-Comunicacao-com-e-sem-fio.md) | 19,17 / 20 |
+| &check; | [AV3 - Analógico e Digital](https://github.com/cintia-shinoda/ufv_robotica/blob/main/3_Integracao-Hardware-Software/Avaliacoes/AV3-Analogico-e-Digital.md) | 19,05 / 20 |
+| &check; | [AV4 - Atuadores Elétricos, Hidráulicos e Pneumáticos](https://github.com/cintia-shinoda/ufv_robotica/blob/main/3_Integracao-Hardware-Software/Avaliacoes/AV4-Atuadores-Eletricos-Hidraulicos-e-Pneumaticos.md) | 20 / 20 |
 | &check; | Projeto Final | 19,3 / 20 |
 | **Média Final** |  | **98 / 100** |
 

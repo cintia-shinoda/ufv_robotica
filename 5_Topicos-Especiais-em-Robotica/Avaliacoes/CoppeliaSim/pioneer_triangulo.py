@@ -4,14 +4,10 @@ pioneer_triangulo.py
 CoppeliaSim + Python (ZMQ Remote API)
 Pioneer 3-DX percorre um TRIANGULO EQUILATERO no plano x-y.
 
-Baseado no script "pioneer.m" da disciplina (mesma conexao, mesmos
-handles, mesmo controle por feedback linearization e conversao de rodas).
-A tarefa: 3 vertices a 120 graus, avanco por chegada, verificacao final.
-
 COMO USAR:
-  1. Abra "Pioneer.ttt" (pasta Ambiente de Simulacao) no CoppeliaSim.
+  1. Abra "Pioneer.ttt" no CoppeliaSim.
   2. Garanta o add-on "ZMQ remote API" ativo (padrao no 4.x).
-  3. Ative o venv e instale as dependencias (ver instrucoes do chat).
+  3. Ative o venv e instale as dependências
   4. Rode:  python pioneer_triangulo.py
 """
 
@@ -21,24 +17,29 @@ import numpy as np
 from coppeliasim_zmqremoteapi_client import RemoteAPIClient
 
 # ----------------------------------------------------------------------
-# Parametros do triangulo
+#                 Parâmetros do triângulo
 # ----------------------------------------------------------------------
-CX, CY = 0.0, 0.0          # centro do triangulo [m]
+CX, CY = 0.0, 0.0          # centro do triângulo [m]
 R = 1.5                    # circunraio [m]
 ANG = np.deg2rad([90, 210, 330])     # 3 vertices a 120 graus
 WP = [(CX + R*math.cos(a), CY + R*math.sin(a)) for a in ANG]
-WP.append(WP[0])           # fecha o triangulo (volta ao vertice 0)
+WP.append(WP[0])           # fecha o triângulo (volta ao vertice 0)
 
-TOL_CHEGADA = 0.12         # raio de chegada a um vertice [m]
-T_POR_WP = 35.0            # tempo maximo por vertice [s]
+TOL_CHEGADA = 0.10         # raio de chegada a um vértice [m]
+T_POR_WP = 35.0            # tempo máximo por vértice [s]
 TS = 0.1                   # periodo de controle [s] (10 Hz)
-A_OFF = 0.15              # ponto de controle fora do eixo [m]
-KD = np.diag([0.20, 0.30]) # ganhos do controlador
 
-# Geometria do Pioneer (igual Pioneer3DX.py)
+# Controle polar "gira-entao-avanca" (arestas retas)
+UMAX = 0.40                # velocidade linear máxima [m/s]
+WMAX = 1.5                 # velocidade angular máxima [rad/s]
+K_RHO = 1.2                # ganho de aproximacao
+K_ALPHA = 2.0              # ganho de alinhamento
+ALPHA_GATE = 0.6           # se |alpha| > isso (rad ~34 deg): gira no lugar
+
+# Geometria do Pioneer
 L_EIXO = 0.331             # distancia entre rodas [m]
 R_RODA = 0.0975            # raio da roda [m]
-MAX_W = 2.4               # saturacao de velocidade da roda [rad/s]
+MAX_W = 2.4                # saturação de velocidade da roda [rad/s]
 
 
 def yaw_from_quat(qx, qy, qz, qw):
@@ -48,7 +49,7 @@ def yaw_from_quat(qx, qy, qz, qw):
 
 def main():
     print("Conectando ao CoppeliaSim...")
-    client = RemoteAPIClient()
+    client = RemoteAPIClient(host='127.0.0.1')
     sim = client.require('sim')
 
     sim.startSimulation()
@@ -79,14 +80,18 @@ def main():
             x, y = pose[0], pose[1]
             yaw = yaw_from_quat(pose[3], pose[4], pose[5], pose[6])
 
-            # ----- Controle (feedback linearization) -----
-            A = np.array([[math.cos(yaw), -A_OFF*math.sin(yaw)],
-                          [math.sin(yaw),  A_OFF*math.cos(yaw)]])
-            erro = np.array([xd - x, yd - y])
-            Ud = np.linalg.pinv(A) @ (KD @ erro)   # Xd_dot = 0
-            v, w = float(Ud[0]), float(Ud[1])
+            # ----- Controle polar (gira-entao-avanca -> arestas retas) -----
+            ex, ey = xd - x, yd - y
+            rho = math.hypot(ex, ey)
+            alpha = math.atan2(math.sin(math.atan2(ey, ex) - yaw),
+                               math.cos(math.atan2(ey, ex) - yaw))
+            if abs(alpha) > ALPHA_GATE:
+                v = 0.0                      # muito desalinhado: gira no lugar
+            else:
+                v = UMAX * math.tanh(K_RHO * rho) * math.cos(alpha)
+            w = max(min(K_ALPHA * alpha, WMAX), -WMAX)
 
-            # ----- Conversao para rodas (igual Pioneer3DX.py) -----
+            # ----- Conversao para rodas  -----
             vel_left = (v - w*L_EIXO/2) / R_RODA
             vel_right = (v + w*L_EIXO/2) / R_RODA
             vel_left = max(min(vel_left, MAX_W), -MAX_W)
@@ -102,8 +107,7 @@ def main():
             log['w'].append(w)
             log['wp'].append(iwp)
 
-            # ----- Chegou? -----
-            rho = math.hypot(xd - x, yd - y)
+            # ----- Verifica chegada -----
             if rho < TOL_CHEGADA:
                 chegou = True
                 if iwp < 3:

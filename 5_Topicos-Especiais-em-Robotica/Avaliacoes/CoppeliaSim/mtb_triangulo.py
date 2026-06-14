@@ -5,21 +5,17 @@ CoppeliaSim + Python (ZMQ Remote API)
 Manipulador MTB (SCARA: 2 juntas rotativas + 1 prismatica) leva o
 efetuador a 3 posicoes que formam um TRIANGULO EQUILATERO no espaco.
 
-Baseado no script "mtb.m" da disciplina (mesmos handles axis1..axis4,
-mesmo setJointTargetPosition). Acrescenta:
-  1. Medicao automatica de L1, L2 (le posicoes das juntas).
-  2. Calibracao da direcao de referencia (q1=q2=0).
-  3. Cinematica inversa do SCARA para cada vertice.
-  4. Verificacao do triangulo (lados iguais + erro por vertice).
+Movimento:
+  - Posiciona as juntas com setJointPosition 
+  - NAO altera o modo da junta
 
 [Inferencia] axis1/axis2 = rotativas (definem x,y); axis3 = prismatica
-(z, mantida fixa); axis4 = TCP. O script mede a geometria real, entao
-funciona mesmo sem saber os comprimentos dos elos de antemao.
+(z, mantida fixa); axis4 = TCP. O script mede a geometria real.
 
 COMO USAR:
-  1. Abra "MTB.ttt" (pasta Ambiente de Simulacao) no CoppeliaSim.
+  1. Abra "MTB.ttt" no CoppeliaSim.
   2. Garanta o add-on "ZMQ remote API" ativo.
-  3. Ative o venv e rode:  python mtb_triangulo.py
+  3. Rode (com venv ativo):  python mtb_triangulo.py
 """
 
 import math
@@ -27,18 +23,14 @@ import time
 import numpy as np
 from coppeliasim_zmqremoteapi_client import RemoteAPIClient
 
-# ----------------------------------------------------------------------
-# Parametros do triangulo (fracoes do alcance total do braco)
-# ----------------------------------------------------------------------
-FRAC_CENTRO = 0.55         # distancia do centro do triangulo a base
-FRAC_RAIO = 0.22          # circunraio do triangulo
+FRAC_CENTRO = 0.55
+FRAC_RAIO = 0.22
 ANG = np.deg2rad([90, 210, 330])
-TOL_JUNTA = math.radians(1.5)  # tolerancia de acomodacao das juntas
-T_SETTLE = 5.0            # tempo maximo de acomodacao por vertice [s]
+TOL_JUNTA = math.radians(1.5)
+T_SETTLE = 5.0
 
 
 def getpos(sim, h):
-    """Posicao [x,y,z] de um objeto no mundo."""
     p = sim.getObjectPosition(h, -1)
     return np.array(p, dtype=float)
 
@@ -51,14 +43,43 @@ def angdiff(a, b):
     return math.atan2(math.sin(a-b), math.cos(a-b))
 
 
+def diag_joint(sim, j, name):
+    """Imprime o modo da junta para diagnostico."""
+    parts = []
+    try:
+        parts.append(f"jointMode={sim.getJointMode(j)}")
+    except Exception:
+        parts.append("jointMode=?")
+    try:
+        parts.append(f"dynctrl={sim.getObjectInt32Param(j, sim.jointintparam_dynctrlmode)}")
+    except Exception:
+        parts.append("dynctrl=?")
+    print(f"  [diag] {name}: " + " | ".join(str(p) for p in parts))
+
+
+def enable_motor(sim, j):
+    """Coloca a junta em controle de posicao (API 4.x), com fallbacks."""
+    # 4.x: modo de controle dinamico = posicao
+    try:
+        sim.setObjectInt32Param(j, sim.jointintparam_dynctrlmode, sim.jointdynctrl_position)
+    except Exception:
+        pass
+    # legado: motor + malha de controle
+    try:
+        sim.setObjectInt32Param(j, sim.jointintparam_motor_enabled, 1)
+        sim.setObjectInt32Param(j, sim.jointintparam_ctrl_enabled, 1)
+    except Exception:
+        pass
+
+
 def move_joints(sim, a1, a2, a3, q1, q2, q3):
-    sim.setJointTargetPosition(a1, q1)
-    sim.setJointTargetPosition(a2, q2)
-    sim.setJointTargetPosition(a3, q3)
+    # Modo cinematico: setJointPosition posiciona a junta diretamente
+    sim.setJointPosition(a1, q1)
+    sim.setJointPosition(a2, q2)
+    sim.setJointPosition(a3, q3)
 
 
 def settle(sim, a1, a2, qd, tmax=T_SETTLE):
-    """Espera as juntas rotativas estabilizarem perto do alvo (ou timeout)."""
     t = time.time()
     while time.time() - t < tmax:
         e1 = abs(angdiff(getjoint(sim, a1), qd[0]))
@@ -66,11 +87,28 @@ def settle(sim, a1, a2, qd, tmax=T_SETTLE):
         if e1 < TOL_JUNTA and e2 < TOL_JUNTA:
             break
         time.sleep(0.05)
-    time.sleep(0.3)   # margem extra
+    time.sleep(0.3)
+
+
+def force_if_stuck(sim, j, val, prismatic=False):
+    """Se a junta nao chegou no alvo (junta cinematica), forca a posicao."""
+    cur = getjoint(sim, j)
+    err = abs(cur - val) if prismatic else abs(angdiff(cur, val))
+    lim = 0.01 if prismatic else math.radians(2)
+    if err > lim:
+        try:
+            sim.setJointPosition(j, val)
+        except Exception as e:
+            print(f"   [aviso] setJointPosition falhou: {e}")
+
+
+def ir_para(sim, a1, a2, a3, q1, q2, q3):
+    """Posiciona as juntas (modo cinematico) e aguarda atualizacao do TCP."""
+    move_joints(sim, a1, a2, a3, q1, q2, q3)
+    time.sleep(0.5)   # tempo para o TCP atualizar/renderizar
 
 
 def ik_scara(x, y, L1, L2):
-    """Cinematica inversa do SCARA planar (2 elos), cotovelo 'para cima'."""
     r2 = x*x + y*y
     c2 = (r2 - L1*L1 - L2*L2) / (2*L1*L2)
     ok = abs(c2) <= 1.0
@@ -82,7 +120,7 @@ def ik_scara(x, y, L1, L2):
 
 def main():
     print("Conectando ao CoppeliaSim...")
-    client = RemoteAPIClient()
+    client = RemoteAPIClient(host='127.0.0.1')
     sim = client.require('sim')
 
     sim.startSimulation()
@@ -93,6 +131,11 @@ def main():
     axis3 = sim.getObject('/MTB/axis3')
     tcp = sim.getObject('/MTB/axis4')
     print("[OK] Eixos do MTB obtidos.")
+
+    # Juntas em modo CINEMATICO: usamos setJointPosition direto.
+    print("Modo das juntas:")
+    for j, n in ((axis1, 'axis1'), (axis2, 'axis2'), (axis3, 'axis3')):
+        diag_joint(sim, j, n)
 
     # --- 1. Medir geometria (L1, L2) ---
     p1 = getpos(sim, axis1)
@@ -106,20 +149,19 @@ def main():
           f"base=({base[0]:.2f},{base[1]:.2f})")
 
     # --- 2. Calibracao: direcao de referencia (q1=q2=0) ---
-    move_joints(sim, axis1, axis2, axis3, 0.0, 0.0, q3_hold)
-    settle(sim, axis1, axis2, (0.0, 0.0), tmax=4.0)
+    ir_para(sim, axis1, axis2, axis3, 0.0, 0.0, q3_hold)
     p_cal = getpos(sim, tcp)
     theta_ref = math.atan2(p_cal[1]-base[1], p_cal[0]-base[0])
     print(f"Calibracao: theta_ref={math.degrees(theta_ref):.1f} deg, "
           f"z do plano={p_cal[2]:.3f} m")
+
+    # Sanity check: o braco se moveu na calibracao?
 
     # --- 3. Triangulo no frame da base ---
     reach = L1 + L2
     r_c = FRAC_CENTRO * reach
     R_tri = FRAC_RAIO * reach
     Vb = np.array([[r_c + R_tri*math.cos(a), R_tri*math.sin(a)] for a in ANG])
-
-    # Auto-ajuste de alcancabilidade
     rmin, rmax = abs(L1-L2) + 0.02, reach - 0.02
     for _ in range(8):
         rr = np.hypot(Vb[:, 0], Vb[:, 1])
@@ -130,7 +172,7 @@ def main():
         Vb = np.array([[r_c + R_tri*math.cos(a), R_tri*math.sin(a)] for a in ANG])
     print(f"Triangulo: r_centro={r_c:.3f} m, R={R_tri:.3f} m")
 
-    # --- 4. Visitar cada vertice (IK -> comando -> leitura) ---
+    # --- 4. Visitar cada vertice ---
     tcp_real = np.full((3, 3), np.nan)
     for k in range(3):
         q1, q2, ok = ik_scara(Vb[k, 0], Vb[k, 1], L1, L2)
@@ -138,8 +180,7 @@ def main():
             print(f"[!] Vertice {k} fora do alcance.")
         print(f"\n-> Vertice {k}: q1={math.degrees(q1):.1f} deg, "
               f"q2={math.degrees(q2):.1f} deg")
-        move_joints(sim, axis1, axis2, axis3, q1, q2, q3_hold)
-        settle(sim, axis1, axis2, (q1, q2))
+        ir_para(sim, axis1, axis2, axis3, q1, q2, q3_hold)
         tcp_real[k] = getpos(sim, tcp)
         print(f"   TCP real: ({tcp_real[k,0]:.3f}, {tcp_real[k,1]:.3f}, {tcp_real[k,2]:.3f})")
 
@@ -154,7 +195,7 @@ def verificar(tcp_real, Vb, base, theta_ref):
     print("\n========= VERIFICACAO DO TRIANGULO (MTB) =========")
     Rrot = np.array([[math.cos(theta_ref), -math.sin(theta_ref)],
                      [math.sin(theta_ref),  math.cos(theta_ref)]])
-    alvo_w = (base.reshape(2, 1) + Rrot @ Vb.T).T   # 3x2 no mundo
+    alvo_w = (base.reshape(2, 1) + Rrot @ Vb.T).T
 
     def d(a, b):
         return math.hypot(a[0]-b[0], a[1]-b[1])
@@ -163,8 +204,18 @@ def verificar(tcp_real, Vb, base, theta_ref):
          d(tcp_real[1], tcp_real[2]),
          d(tcp_real[2], tcp_real[0])]
     Lmed = sum(L)/3
-    desvio = max(abs(x - Lmed) for x in L)/Lmed*100
 
+    # Guarda: efetuador nao se moveu?
+    if Lmed < 1e-6:
+        print("  [!] O efetuador NAO se moveu entre os vertices.")
+        print("      TCP identico nos 3 pontos -> as juntas nao responderam.")
+        print("      Acao: confira no CoppeliaSim se axis1/axis2 estao em modo")
+        print("      'Torque/force' com motor + control loop habilitados, ou se")
+        print("      sao juntas cinematicas. Me mande um print das propriedades.")
+        print("==================================================")
+        return
+
+    desvio = max(abs(x - Lmed) for x in L)/Lmed*100
     for k in range(3):
         err = math.hypot(tcp_real[k, 0]-alvo_w[k, 0], tcp_real[k, 1]-alvo_w[k, 1])
         st = "[OK]" if err <= 0.03 else "[!]"
@@ -183,13 +234,16 @@ def plotar(tcp_real, Vb, base, theta_ref):
     try:
         import matplotlib.pyplot as plt
     except ImportError:
-        print("\n(matplotlib nao instalado - grafico pulado. "
-              "Instale com: pip install matplotlib)")
+        print("\n(matplotlib nao instalado - grafico pulado.)")
+        return
+    if np.any(np.isnan(tcp_real)):
+        return
+    # se nao se moveu, nao plota triangulo degenerado
+    if math.hypot(tcp_real[0,0]-tcp_real[1,0], tcp_real[0,1]-tcp_real[1,1]) < 1e-6:
         return
     Rrot = np.array([[math.cos(theta_ref), -math.sin(theta_ref)],
                      [math.sin(theta_ref),  math.cos(theta_ref)]])
     alvo_w = (base.reshape(2, 1) + Rrot @ Vb.T).T
-
     plt.figure("MTB - Triangulo")
     tx = list(tcp_real[:, 0]) + [tcp_real[0, 0]]
     ty = list(tcp_real[:, 1]) + [tcp_real[0, 1]]

@@ -25,8 +25,44 @@ A grade abaixo mostra a posição da base de recarga e das baias. O robô móvel
 
 Para solucionar o problema proposto, responda as questões a seguir: 
 
+1. Quais são os desafios principais de controlar um robô do tipo uniciclo em um ambiente industrial com rotas definidas e orientações alvo?
 
+
+2. Como você estruturaria o controle (por exemplo, separando controle de orientação e de posição) para o problema proposto?
+
+3. Como garantir que o robôs não colida com as baias durante a navegação?
+Nota: Consider que no problema proposto, o robô não possui implementado estratégias de evasão de obstáculos. O rota a ser seguida deve garantir a navegação sem colisão.
+
+
+4. Quais critérios você usaria para ajustar os ganhos do controlador para garantir um comportamento suave, seguro e eficiente?
+
+5. Qual a rota realizada pelo robô para executar a tarefa proposta?
+
+Insira aqui as imagens dos seguintes gráficos:
+
+•	Navegação no plano XY
+•	Evolução temporal de X
+•	Evolução temporal de Y
+•	Evolução temporal de 
+
+
+6. Quais os sinais de controle foram aplicados ao robô para executar a tarefa proposta?
+
+Insira aqui as imagens dos seguintes gráficos:
+•	Evolução temporal da velocidade linear (m/s)
+•	Evolução temporal da velocidade angular (rad/s)
 -----
+
+
+
+
+
+
+
+
+
+
+----
 
 > **Robô:** uniciclo com tração diferencial · **Tarefa:** entregas entre 4 baias com retorno à *home* (recarga).
 > **Circuito:** `Home → Baia A → Baia B → Baia C → Baia D → Home`

@@ -14,3 +14,7 @@
 | &check; | 4 | 19/10/2025 | Questionário: De onde vim e pra onde vou | 20 / 20 |
 | &check; | 5 | 26/10/2025 | Tarefa: Gostei desta disciplina | 20 / 20 |
 | **Média Final** |  |  |  | **100 / 100** |
+
+
+|  | Data |  |
+|  | 15/09/2025 | Aula inaugural |

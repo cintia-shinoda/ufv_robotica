@@ -1,4 +1,4 @@
-# `UFV - Especialização em Robótica`
+# `Especialização em Robótica`
 
 <p align="center">
   <img src="https://img.shields.io/github/last-commit/cintia-shinoda/ufv_robotica" alt="GitHub Last Commit" />
@@ -18,7 +18,8 @@
 |  | 4 |  | [Princípios Matemáticos e Computacionais](https://github.com/cintia-shinoda/ufv_robotica/tree/main/4_Principios-Matematicos-e-Computacionais) |  |  |
 |  | 5 |  | [Tópicos Especiais em Robótica](https://github.com/cintia-shinoda/ufv_robotica/tree/main/5_Topicos-Especiais-em-Robotica) |  |  |
 |  | 6 |  | [Fundamentos de Robótica Terrestre](https://github.com/cintia-shinoda/ufv_robotica/tree/main/6_Fundamentos-de-Robotica-Terrestre) |  |  |
-
+|  | 7 |  | [Fundamentos de Robótica Aérea](https://github.com/cintia-shinoda/ufv_robotica/tree/main/7_Fundamentos-de-Robotica-Aerea) |  |  |
+|  | 8 |  | [Fundamentos de Manipuladores Robóticos](https://github.com/cintia-shinoda/ufv_robotica/tree/main/8_Fundamentos-de-Manipuladores-Roboticos) |  |  |
 ---
 
 <br>

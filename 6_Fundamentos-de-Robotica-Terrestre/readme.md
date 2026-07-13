@@ -31,3 +31,8 @@
 |  |  | 25/05/2026 | <ul><li>[ ] Estratégias de Navegação: Posicionamento, Caminho e Trajetória</li><li>[ ] Projetando um controlador para robô uniciclo</li><li>[ ] Implementando um controlador para robô uniciclo</li></ul> |
 |  |  | 28/05/2026 | <ul><li>[ ] Conhecendo a AuRoRA (Autonomous Robots for Research and Application)</li><li>[ ] Arquitetura da Plataforma</li></ul> |
 |  |  | 01/06/2026 | <ul><li>[ ] Revisão</li><li>[ ] Orientação de Objetos no AuRoRA</li><li>[ ] Simulações no AuRoRA</li></ul> |
+| ? |  | 04/06/2026 | ? |
+|  |  | 08/06/2026 |  |
+|  |  | 10/06/2026 |  |
+|  |  | 15/06/2026 |  |
+|  |  | 18/06/2026 |  |

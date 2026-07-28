@@ -7,8 +7,8 @@
 |  | # | Conteúdo |
 |:---:|:---:|:---|
 |  | 1 | Fundamentos de Robótica |
-|  | 2 |  |
-|  | 3 |  |
+|  | 2 | Movimento Rígido e Transformação Homogênea |
+|  | 3 | Cinemática da Posição e Notação de Denavit-Hartenberg |
 |  | 4 |  |
 
 
@@ -18,9 +18,10 @@
 ### Avaliações
 |  | Avaliação | Nota |
 |:---:|:---|:---:|
-|  | 1 |  |
-|  |  |  |
-|  |  |  |
+| &check; | 1 | 20,0 / 20,0 |
+|  | 2 |  |
+|  | 3 |  |
+|  | 4 |  |
 
 
 ---
@@ -30,6 +31,8 @@
 |     |    | Data |   |    |
 |:---:|:---|:---:|:---|:---|
 |  |  | 14/07/2026 |  |  |
+|  |  | 21/07/2026 |  |  |
+|  |  | 28/07/2026 |  |  |
 
 
 ---
@@ -44,5 +47,6 @@
 
 
 ## Curiosidades e Material de Apoio
-- [Understanding Work Envelopes of Robots!](https://youtu.be/_canCYWZPsc?si=FKwgjS1sQVzJvusx)
-- A História dos Robôs em Vídeos
+
+### [Curiosidades](Curiosidades-e-Material-de-Apoio/1_Curiosidades.ipynb)
+### [A História dos Robôs em Vídeos](Curiosidades-e-Material-de-Apoio/2_A-Historia-dos-Robos-em-Videos.ipynb)

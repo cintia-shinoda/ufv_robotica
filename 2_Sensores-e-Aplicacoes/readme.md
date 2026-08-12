@@ -40,3 +40,8 @@
 |  | Monitoria 5 | 04/12/2025 |  |
 |  | Teórica 6 | 09/12/2025 |  |
 |  | Monitoria 6 | 11/12/2025 |  |
+
+
+---
+
+<img src="images/relatorio-elt-533.png" alt="Relatório ELT 533" size="100%" position="center"/>

@@ -14,10 +14,10 @@
 ### Avaliações
 |  | Avaliação | Nota |
 |:---:|:---|:---:|
-|  | Atividade 1 |  |
-|  | Atividade 2 |  |
-|  | Atividade 3 |  |
-|  | Atividade 4 |  |
+| &check; | Atividade 1 | 20 / 20 |
+| &check; | Atividade 2 | 20 / 20 |
+| &check; | Atividade 3 | 20 / 20 |
+| &check; | Atividade 4 | 20 / 20 |
 |  | Projeto Final |  |
 
 ---

@@ -11,11 +11,11 @@
 
 |  | # | Data | Disciplina | Professor(es)| Média |
 |:---:|:---:|:---:|:---|:---|:---:|
-| &check; | 0 | 15/09/2025 a 21/09/2025 |[Portal da Robótica: Ambientação e Integração](https://github.com/cintia-shinoda/ufv_robotica/tree/main/0_Ambientacao-e-Integracao) |  | 100/100 |
-| &check; | 1 | 22/09/2025 a 02/11/2025 | [Prototipagem Eletromecânica](https://github.com/cintia-shinoda/ufv_robotica/tree/main/1_Prototipagem-Eletromecanica) | <ul><li>Celso Oliveira Barcelos</li><li>Geice Paula Villibor</li><li>Monitoria: Lucas Tavares Machado</li></ul> | 98 / 100 |
+| &check; | 0 | 15/09/2025 a 21/09/2025 |[Portal da Robótica: Ambientação e Integração](https://github.com/cintia-shinoda/ufv_robotica/tree/main/0_ELT-530-Ambientacao-e-Integracao) |  | 100/100 |
+| &check; | 1 | 22/09/2025 a 02/11/2025 | [Prototipagem Eletromecânica](https://github.com/cintia-shinoda/ufv_robotica/tree/main/1_ELT-532-Prototipagem-Eletromecanica) | <ul><li>Celso Oliveira Barcelos</li><li>Geice Paula Villibor</li><li>Monitoria: Lucas Tavares Machado</li></ul> | 98 / 100 |
 | &check; | 2 | 03/11/2025 | [Sensores e Aplicações](https://github.com/cintia-shinoda/ufv_robotica/tree/main/2_Sensores-e-Aplicacoes) | <ul><li>Gustavo Veríssimo</li><li>André Mendes</li><li>Monitorias: Lucas Tavares</li></ul> | 99 / 100 |
-| &check; | 3 | 06/01/2026 a 10/02/2026 | [Integração Hardware-Software](https://github.com/cintia-shinoda/ufv_robotica/tree/main/3_Integracao-Hardware-Software) | <ul><li>Ricardo dos Santos Ferreira</li><li>André Luís Carvalho Mendes</li></ul> | 98/100 |
-|  | 4 |  | [Princípios Matemáticos e Computacionais](https://github.com/cintia-shinoda/ufv_robotica/tree/main/4_Principios-Matematicos-e-Computacionais) |  |  |
+| &check; | 3 | 06/01/2026 a 10/02/2026 | [Integração Hardware-Software](https://github.com/cintia-shinoda/ufv_robotica/tree/main/3_Integracao-Hardware-Software) | <ul><li>Ricardo dos Santos Ferreira</li><li>André Luís Carvalho Mendes</li></ul> | 98 / 100 |
+|  | 4 |  | [Princípios Matemáticos e Computacionais](https://github.com/cintia-shinoda/ufv_robotica/tree/main/4_Principios-Matematicos-e-Computacionais) |  | 100 / 100 |
 |  | 5 |  | [Tópicos Especiais em Robótica](https://github.com/cintia-shinoda/ufv_robotica/tree/main/5_Topicos-Especiais-em-Robotica) |  |  |
 |  | 6 |  | [Fundamentos de Robótica Terrestre](https://github.com/cintia-shinoda/ufv_robotica/tree/main/6_Fundamentos-de-Robotica-Terrestre) |  |  |
 |  | 7 |  | [Fundamentos de Robótica Aérea](https://github.com/cintia-shinoda/ufv_robotica/tree/main/7_Fundamentos-de-Robotica-Aerea) |  |  |

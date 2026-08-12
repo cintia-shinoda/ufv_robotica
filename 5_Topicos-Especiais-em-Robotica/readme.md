@@ -3,7 +3,7 @@
 <!-- Link da videochamada: https://meet.google.com/hgr-qvty-wcm -->
 
 ### Conteúdo
-|  | # | Conteúdo |https://www.kalunga.com.br/prod/canteadeira-conjugada-comperfurador-para-furo-ovoide-lassane-cx-1-un/243170?utm_content=home&utm_source=ultimos-produtos-vistos&utm_medium=site&utm_campaign=243170
+|  | # | Conteúdo |
 |:---:|:---:|:---|
 
 
@@ -13,9 +13,9 @@
 ### Avaliações
 |  | Avaliação | Nota |
 |:---:|:---|:---:|
-| &check; | [AuroRA](https://github.com/cintia-shinoda/ufv_robotica/tree/main/5-Topicos-Especiais-em-Robotica/Atividades-Avaliativas/AuRoRA/Atividade-AuRoRA.pdf) |  |
-| &check; | CoppeliaSim |  |
-| &check; | Scratch |  |
+| &check; | [AuroRA](https://github.com/cintia-shinoda/ufv_robotica/tree/main/5-Topicos-Especiais-em-Robotica/Atividades-Avaliativas/AuRoRA/Atividade-AuRoRA.pdf) | 40 / 40 |
+| &check; | CoppeliaSim |  / 40 |
+| &check; | Scratch |  / 20 |
 
 
 ---

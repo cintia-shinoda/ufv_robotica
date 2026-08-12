@@ -18,17 +18,16 @@
 ### Avaliações
 |  | Avaliação | Nota |
 |:---:|:---|:---:|
-|  | Avaliação 1 |  |
-|  | Avaliação 2 |  |
-|  | Avaliação 3 |  |
-|  | Avaliação 4 |  |
-| &check; | [Trabalho Final](https://github.com/cintia-shinoda/ufv_robotica/blob/main/4-Principios-Matematicos-e-Computacionais/Projeto-Final/Projeto-Final.pdf) | 20 / 20 |
-| **Média Final** |  | **** |
+|  | [Avaliação 1](https://github.com/cintia-shinoda/ufv_robotica/blob/main/4_Principios-Matematicos-e-Computacionais/Avaliacoes/avaliacao-1.ipynb) | 20 / 20 |
+|  | [Avaliação 2](https://github.com/cintia-shinoda/ufv_robotica/blob/main/4_Principios-Matematicos-e-Computacionais/Avaliacoes/avaliacao-2.ipynb) | 20 / 20 |
+|  | [Avaliação 3](https://github.com/cintia-shinoda/ufv_robotica/blob/main/4_Principios-Matematicos-e-Computacionais/Avaliacoes/avaliacao-3.ipynb) | 20 / 20 |
+|  | [Avaliação 4](https://github.com/cintia-shinoda/ufv_robotica/blob/main/4_Principios-Matematicos-e-Computacionais/Avaliacoes/avaliacao-4.ipynb) | 20 / 20 |
+| &check; | [Trabalho Final](https://github.com/cintia-shinoda/ufv_robotica/blob/main/4_Principios-Matematicos-e-Computacionais/Projeto-Final/Projeto-Final.pdf) | 20 / 20 |
+| **Média Final** |  | **100 / 100** |
 
 <br>
 
 ---
-
 
 ### Encontros Síncronos
 |  |  | Data |  |
@@ -46,3 +45,6 @@
 |  |  | 06/04/2026 |  |
 |  |  | 09/04/2026 |  |
 
+----
+
+<img src="images/relatorio-elt-531.png" alt="Relatório ELT 531" width="100%" align="center"/>
